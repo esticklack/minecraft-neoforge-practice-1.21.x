@@ -1,6 +1,7 @@
 package net.estikuwus.neoforge;
 
 import net.estikuwus.neoforge.block.ModBlocks;
+import net.estikuwus.neoforge.item.ModCreativeModeTabs;
 import net.estikuwus.neoforge.item.ModItems;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -42,6 +43,7 @@ public class TutorialMod {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModCreativeModeTabs.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
